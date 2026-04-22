@@ -7,16 +7,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fayerman-source/neurolib.git"
+    "url": "https://github.com/fayerman-source/neuro-notes.git"
   },
-  "homepage": "https://github.com/fayerman-source/neurolib#readme",
+  "homepage": "https://github.com/fayerman-source/neuro-notes#readme",
   "bugs": {
-    "url": "https://github.com/fayerman-source/neurolib/issues"
+    "url": "https://github.com/fayerman-source/neuro-notes/issues"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "next": "16.1.6",
