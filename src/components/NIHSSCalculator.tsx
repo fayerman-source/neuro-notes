@@ -297,6 +297,22 @@ export default function NIHSSCalculator() {
       </div>
 
       <div className="px-6 pb-6">
+        <div
+          role="note"
+          aria-label="Clinical safety warning"
+          className="mb-3 flex items-start gap-2 px-4 py-3"
+          style={{
+            background: 'rgba(245, 158, 11, 0.08)',
+            border: '1px solid rgba(245, 158, 11, 0.35)',
+            borderRadius: '10px',
+          }}
+        >
+          <span aria-hidden="true" style={{ color: '#F59E0B', fontSize: '16px', lineHeight: '20px' }}>⚠</span>
+          <p className="text-xs leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
+            <span style={{ color: '#F59E0B', fontWeight: 600 }}>Verify every item against the patient before copying.</span>{' '}
+            This tool does not replace clinical judgement. Do not paste PHI into this calculator.
+          </p>
+        </div>
         <button
           onClick={handleCopy}
           aria-live="polite"
