@@ -1,5 +1,7 @@
 # Neuro Note Macros
 
+![Neuro Note Macros Hero](./public/hero-bg.png)
+
 A clinical documentation aid for neurology. Copy-paste dot phrase templates and an NIHSS calculator, running entirely in your browser as a static web app.
 
 > ⚠ **Clinical documentation aid only — not a medical device.** Read `DISCLAIMER.md` before use. Verify every score and generated text against the patient before entering into the medical record. Do not enter PHI into this application.
