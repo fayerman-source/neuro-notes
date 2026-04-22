@@ -92,6 +92,57 @@ export default function Home() {
         </div>
       </header>
 
+      <section className="relative overflow-hidden border-b border-white/5">
+        <div 
+          className="absolute inset-0 z-0 opacity-40 grayscale-[0.2]"
+          style={{
+            backgroundImage: 'url("/hero-bg.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#0B0F1A]/80 via-[#0B0F1A]/40 to-[#0B0F1A]" />
+        
+        <div className="relative z-20 max-w-6xl mx-auto px-4 py-20 md:py-32">
+          <div className="max-w-2xl">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6" style={{ color: '#F8FAFC' }}>
+              Neurology documentation, <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F6EF7] to-[#7B5EA7]">
+                reimagined for clinical flow.
+              </span>
+            </h2>
+            <p className="text-lg mb-8 leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+              A high-performance library of dot phrases and clinical calculators. 
+              Designed for neurologists and stroke teams who value precision and speed. 
+              Private, local-first, and always open source.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button 
+                onClick={() => {
+                  const el = document.getElementById('main-content');
+                  el?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="px-6 py-3 rounded-xl font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]"
+                style={{
+                  background: 'linear-gradient(135deg, #4F6EF7, #7B5EA7)',
+                  color: 'white',
+                  boxShadow: '0 4px 20px rgba(79, 110, 247, 0.3)',
+                }}
+              >
+                Browse Templates
+              </button>
+              <button 
+                onClick={() => setShowNIHSS(true)}
+                className="px-6 py-3 rounded-xl font-semibold transition-all border border-white/10 hover:bg-white/5"
+                style={{ color: '#F8FAFC' }}
+              >
+                Launch NIHSS
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main id="main-content" className="max-w-6xl mx-auto px-4 py-6">
         {showNIHSS && (
           <div className="mb-8 animate-slide-down">
