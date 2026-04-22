@@ -17,24 +17,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-          <div style={{ flex: 1 }}>{children}</div>
+      <body className={`${inter.className} bg-[#0B0F1A] text-white`}>
+        <div className="flex flex-col min-h-screen">
+          <div className="flex-1">{children}</div>
           <footer
             role="contentinfo"
-            style={{ borderTop: '1px solid rgba(255, 255, 255, 0.06)' }}
+            className="border-t border-white/5"
           >
             <div className="max-w-6xl mx-auto px-4 py-6">
               <div className="flex flex-col gap-2">
                 <p
-                  className="text-xs font-semibold uppercase tracking-wider"
-                  style={{ color: '#F59E0B' }}
+                  className="text-xs font-semibold uppercase tracking-wider text-amber-500"
                 >
                   Clinical documentation aid only — not a medical device
                 </p>
                 <p
-                  className="text-xs leading-relaxed"
-                  style={{ color: 'rgba(255, 255, 255, 0.45)' }}
+                  className="text-xs leading-relaxed text-white/45"
                 >
                   Verify every score and generated text against the patient and source guidelines
                   before entering into the medical record. Do not enter PHI into this application.
